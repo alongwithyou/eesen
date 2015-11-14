@@ -12,8 +12,9 @@ print '2 2 <blk> <eps>'
 print '2 0 <eps> <eps>'
 
 nodeX = 3
+
 for entry in fread.readlines():
-    entry = entry.replace('\n','').strip()
+    entry = entry.replace('\n', '').strip()
     fields = entry.split(' ')
     phone = fields[0]
     if phone == '<eps>' or phone == '<blk>':
